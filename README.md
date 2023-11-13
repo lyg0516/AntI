@@ -2,8 +2,36 @@
 ### S타입: 창작자의 저작권을 보호하고 AI의 무단 데이터 수집을 방지하기 위한 온라인 플랫폼
 
 # 프로젝트 설명
-무단 크롤링을 방지하게 위해
---- 기능 사용
+무단 크롤링을 방지하게 위해 canvas 태그를 이용해 사진을 브라우저에서 동적으로 렌더링하는 기술을 사용한다.
+![image](https://github.com/lyg0516/AntI/assets/91305949/0c51c764-2ba3-4df7-aaee-3ad4c3337148)
+
+```
+       if (c ? (e.width = 0 == a ? r : r / 2, t.width = 0 == a ? r : r / 2, e.height = i / 2 - l, t.height = i / 2 + l) : (e.width = 0 == a ? r : r / 2, e.height = i), 0 == view_cnt) {
+                    var s = 1 == a ? -r / 2 : 0;
+                    o.drawImage(n, 0, 0, r, i, s, 0, r, i), c && c.drawImage(n, 0, 0, r, i, s, -e.height, r, i)
+                } else {
+                    this.__s(view_cnt / 10);
+                    for (var d = [], m = 0; m < this._CX * this._CY; m++) d.push([m, this.__v()]);
+                    d = d.sort(function(e, t) {
+                        return e[1] != t[1] ? e[1] - t[1] : e[0] - t[0]
+                    });
+                    var u = Math.floor(r / this._CX),
+                        g = Math.floor(i / this._CY);
+                    for (var p in d) {
+                        var h = p % this._CX,
+                            _ = Math.floor(p / this._CX),
+                            f = d[p][0] % this._CX,
+                            v = Math.floor(d[p][0] / this._CX),
+                            s = 1 == a ? -r / 2 : 0;
+                        o.drawImage(n, h * u, _ * g, u, g, f * u + s, v * g, u, g), c && c.drawImage(n, h * u, _ * g, u, g, f * u + s, v * g - e.height, u, g)
+                    }
+                }
+```
+
+
+
+출처: https://blog.naver.com/shino1025/221458924033
+
 
 # 프로젝트 활용된 기술
 
